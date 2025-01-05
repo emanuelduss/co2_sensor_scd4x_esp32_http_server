@@ -23,15 +23,15 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=CHANGETHISPASSWORD # CHANGEME
       - GF_USERS_ALLOW_SIGN_UP=false
-      - GF_SERVER_DOMAIN=co2.luxeria.ch
+      - GF_SERVER_DOMAIN=co2.example.net
       - GF_SMTP_ENABLED=false
       - GF_AUTH_ANONYMOUS_ENABLED=true
-      - GF_AUTH_ANONYMOUS_ORG_NAME=Luxeria
+      - GF_AUTH_ANONYMOUS_ORG_NAME=Example
     networks:
       - traefik
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.grafana.rule=Host(`co2.luxeria.ch`)"
+      - "traefik.http.routers.grafana.rule=Host(`co2.example.net`)"
       - "traefik.http.routers.grafana.tls=true"
       - "traefik.http.routers.grafana.tls.certresolver=letsencrypt"
       - "traefik.http.services.grafana.loadbalancer.server.port=3000"

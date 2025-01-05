@@ -16,7 +16,7 @@ log:
 certificatesResolvers:
   letsencrypt:
     acme:
-      email: luxeria@luxeria.ch
+      email: mail@example.net
       storage: /etc/traefik/acme.json
       tlschallenge: {}
 

@@ -304,7 +304,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": 300000,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -328,7 +328,7 @@
               },
               {
                 "color": "red",
-                "value": 1200
+                "value": 1000
               }
             ]
           },
@@ -346,6 +346,7 @@
       "options": {
         "legend": {
           "calcs": [
+            "lastNotNull",
             "min",
             "max",
             "mean"
@@ -409,7 +410,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": 300000,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -451,6 +452,7 @@
       "options": {
         "legend": {
           "calcs": [
+            "lastNotNull",
             "min",
             "max",
             "mean"
@@ -497,7 +499,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "axisSoftMax": 45,
-            "axisSoftMin": 35,
+            "axisSoftMin": 30,
             "barAlignment": 0,
             "drawStyle": "line",
             "fillOpacity": 10,
@@ -514,7 +516,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": 300000,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -529,7 +531,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow",
+                "color": "green",
                 "value": null
               },
               {
@@ -537,7 +539,7 @@
                 "value": 40
               },
               {
-                "color": "red",
+                "color": "orange",
                 "value": 60
               }
             ]
@@ -556,6 +558,7 @@
       "options": {
         "legend": {
           "calcs": [
+            "lastNotNull",
             "min",
             "max",
             "mean"
@@ -594,13 +597,13 @@
     "list": []
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-12h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Sensor",
   "uid": "c7fed600-b469-47e1-8cb2-e82832a34702",
-  "version": 9,
+  "version": 14,
   "weekStart": ""
 }
